@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ad from "/src/mortgage_ad_design_page.png";
 
 const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -13,8 +14,8 @@ const SplashScreen = () => {
 
   return (
     isVisible && (
-      <div className='open-splash'>
-        <img src='./mortgage_ad_design_page.png' alt='Splash Screen' />
+      <div className="open-splash">
+        <img src={ad} alt="Splash Screen" />
       </div>
     )
   );

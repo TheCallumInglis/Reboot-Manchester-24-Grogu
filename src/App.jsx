@@ -53,75 +53,75 @@ export default function App() {
       )}
       {!showSplashScreen && (
         <>
-          <section className='main-left'>
+          <section className="main-left">
             <h1>Mortgage Overpayment Savings Calculator</h1>
             <form onSubmit={handleSubmit}>
-              <div className='label-inner'>
-                <label htmlFor='amount'>
+              <div className="label-inner">
+                <label htmlFor="amount">
                   <strong>Loan amount</strong> -{" "}
                 </label>
                 <input
-                  type='text'
-                  name='amount'
+                  type="text"
+                  name="amount"
                   value={amount}
                   onChange={(e) => convertNumToGBP(e.target.value, setAmount)}
                 />
               </div>
               <br />
-              <div className='label-inner'>
-                <label htmlFor='interest'>
+              <div className="label-inner">
+                <label htmlFor="interest">
                   <strong>Interest Rate (APR %) </strong> -{" "}
                 </label>
                 <input
-                  type='number'
-                  name='interest'
+                  type="number"
+                  name="interest"
                   defaultValue={interest}
-                  step='0.1'
+                  step="0.1"
                   onChange={(e) => setInterest(e.target.value)}
                 />
               </div>
               <br />
-              <p className='term-title'>
+              <p className="term-title">
                 <strong>Term</strong> -{" "}
               </p>
-              <div className='term-inner'>
-                <label htmlFor='termYears'> Years: </label>
+              <div className="term-inner">
+                <label htmlFor="termYears"> Years: </label>
                 <input
-                  type='number'
-                  name='termYears'
+                  type="number"
+                  name="termYears"
                   defaultValue={term[0]}
                   onChange={(e) => setTerm([e.target.value, term[1]])}
                 />
               </div>
-              <div className='term-inner'>
-                <label htmlFor='termMonths'> Months: </label>
+              <div className="term-inner">
+                <label htmlFor="termMonths"> Months: </label>
                 <input
-                  type='number'
-                  name='termMonths'
+                  type="number"
+                  name="termMonths"
                   defaultValue={term[1]}
                   onChange={(e) => setTerm([term[0], e.target.value])}
                 />
               </div>
-              <div className='label-inner'>
-                <label htmlFor='singleOverpayment'>
+              <div className="label-inner">
+                <label htmlFor="singleOverpayment">
                   <strong>Single Overpayment amount</strong> -{" "}
                 </label>
                 <input
-                  type='text'
-                  name='singleOverpayment'
+                  type="text"
+                  name="singleOverpayment"
                   value={singleOverpayment}
                   onChange={(e) =>
                     convertNumToGBP(e.target.value, setSingleOverpayment)
                   }
                 />
               </div>
-              <div className='label-inner'>
-                <label htmlFor='singleOverpayment'>
+              <div className="label-inner">
+                <label htmlFor="singleOverpayment">
                   <strong>Monthly Overpayment amount</strong> -{" "}
                 </label>
                 <input
-                  type='text'
-                  name='singleOverpayment'
+                  type="text"
+                  name="singleOverpayment"
                   value={monthlyOverpayment}
                   onChange={(e) =>
                     convertNumToGBP(e.target.value, setMonthlyOverpayment)
@@ -129,14 +129,14 @@ export default function App() {
                 />
               </div>
               <br />
-              <button className='form-button' type='submit'>
+              <button className="form-button" type="submit">
                 Submit
               </button>
             </form>
           </section>
-          <section className='main-right'>
+          <section className="main-right">
             {submittedDetails !== undefined ? (
-              <div className='mortgage-details'>
+              <div className="mortgage-details">
                 <h2>Mortgage Details</h2>
                 <p>Original Balance: {amount}</p>
                 <p>Single Overpayment amount: {singleOverpayment}</p>
