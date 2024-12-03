@@ -2,7 +2,8 @@ export default function calculateMortgagePayments(
   loanamount,
   annualInterestRate,
   loanTermMonths,
-  monthlyPayment
+  monthlyPayment,
+  monthlyOverpayment = 0
 ) {
   const monthlyInterestRate = annualInterestRate / 12 / 100; // Convert annual rate to monthly decimal
 
@@ -10,7 +11,7 @@ export default function calculateMortgagePayments(
   let payment;
 
   if (monthlyPayment) {
-    payment = monthlyPayment;
+    payment = monthlyPayment + monthlyOverpayment;
   } else {
     payment =
       (loanamount *
