@@ -14,7 +14,7 @@ const SplashScreen = () => {
   return (
     isVisible && (
       <div className='open-splash'>
-        <img src='./mortgage_ad_design_page.png' alt='Splash Screen' />
+        <img src='./src/mortgage_ad_design_page.png' alt='Splash Screen' />
       </div>
     )
   );
