@@ -1,4 +1,4 @@
-import calculateMortgagePayments from "./calculateMortgagePayment"
+import calculateMortgagePayments from "./calculateMortgagePayment";
 
 export default function calculateSavings(mortgageInfo, singleOverpayment, monthlyOverpayment) {
 
@@ -17,21 +17,23 @@ export default function calculateSavings(mortgageInfo, singleOverpayment, monthl
   let totalInterestSaved = 0
 
   for (let i = 0; i < preOverpaymentTable.length; i++) {
-    const interestSaved = preOverpaymentTable[i].interestPayment - postOverpaymentTable[i].interestPayment
-    totalInterestSaved += interestSaved
+    const interestSaved =
+      preOverpaymentTable[i].interestPayment -
+      postOverpaymentTable[i].interestPayment;
+    totalInterestSaved += interestSaved;
     const savingsData = {
       month: i + 1,
       interestSaved: interestSaved.toFixed(2),
-      savingsAccumulator: totalInterestSaved.toFixed(2)
-    }
+      savingsAccumulator: totalInterestSaved.toFixed(2),
+    };
 
-    savingsCalculated.push(savingsData)
+    savingsCalculated.push(savingsData);
   }
 
-  totalInterestSaved = totalInterestSaved.toFixed(2)
+  totalInterestSaved = totalInterestSaved.toFixed(2);
 
-  console.log("Savings Calculated:", savingsCalculated)
-  console.log("Total Interest Saved:", totalInterestSaved)
+  console.log("Savings Calculated:", savingsCalculated);
+  console.log("Total Interest Saved:", totalInterestSaved);
 
   return {savingsCalculated, preOverpaymentTable, postOverpaymentTable, totalInterestSaved, monthlyPayment}
 }
