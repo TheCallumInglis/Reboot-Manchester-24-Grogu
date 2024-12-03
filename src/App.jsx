@@ -8,7 +8,7 @@ import convertNumToGBP from "./utils/convertNumToGBP";
 import convertGBPToNum from "./utils/convertGBPToNum";
 
 export default function App() {
-  let [amount, setamount] = useState("£200,000");
+  let [amount, setAmount] = useState("£200,000");
   let [interest, setInterest] = useState(5);
   let [term, setTerm] = useState([25, 0]);
   let [singleOverpayment, setSingleOverpayment] = useState("£100");
@@ -34,7 +34,7 @@ export default function App() {
       convertGBPToNum(singleOverpayment),
       convertGBPToNum(monthlyOverpayment)
     );
-    setTotalSavings("£" + savings.totalInterestSaved);
+    setTotalSavings(convertNumToGBP(savings.totalInterestSaved));
 
     setSubmittedDetails({
       ...mortgageDetails,
@@ -55,7 +55,7 @@ export default function App() {
         <>
           <section className="main-left">
             <h1>Mortgage Overpayment Savings Calculator</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} onChange={handleSubmit}>
               <div className="label-inner">
                 <label htmlFor="amount">
                   <strong>Loan amount</strong> -{" "}
