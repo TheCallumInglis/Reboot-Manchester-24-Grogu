@@ -15,7 +15,7 @@ export default function App() {
   let [totalSavings, setTotalSavings] = useState("")
   let [submittedDetails, setSubmittedDetails] = useState(undefined)
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     const mortgageDetails = {
@@ -24,16 +24,7 @@ export default function App() {
       loanTermMonths: Number(term[0] * 12) + Number(term[1]),
     };
 
-    // console.log("eeeeee", e.target[0].value)
-    // const details = {
-    //   annualInterestRate: interest,
-    //   loanAmount: amount,
-    //   loanTerm: 
-    // }
-
-
     const savings = calculateSavings(mortgageDetails, convertGBPToNum(singleOverpayment), convertGBPToNum(monthlyOverpayment));
-
     setTotalSavings("£" + savings.totalInterestSaved)
 
     setSubmittedDetails({...mortgageDetails, singleOverpayment, monthlyOverpayment, savings})
