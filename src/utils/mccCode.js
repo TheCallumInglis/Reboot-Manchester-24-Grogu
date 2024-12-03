@@ -78,6 +78,86 @@ const transactions = [
         "amount": -5.50,
         "mcc": "5814",
         "category": "Dining"
+    },
+    {
+        "transactionId": "11",
+        "date": "2023-10-11",
+        "description": "Supermarket",
+        "amount": -60.00,
+        "mcc": "5411",
+        "category": "Groceries"
+    },
+    {
+        "transactionId": "12",
+        "date": "2023-10-12",
+        "description": "Fuel Station",
+        "amount": -40.00,
+        "mcc": "5541",
+        "category": "Fuel"
+    },
+    {
+        "transactionId": "13",
+        "date": "2023-10-13",
+        "description": "Cafe",
+        "amount": -15.00,
+        "mcc": "5812",
+        "category": "Dining"
+    },
+    {
+        "transactionId": "14",
+        "date": "2023-10-14",
+        "description": "Streaming Service",
+        "amount": -9.99,
+        "mcc": "4899",
+        "category": "Subscriptions"
+    },
+    {
+        "transactionId": "15",
+        "date": "2023-10-15",
+        "description": "Boutique",
+        "amount": -150.00,
+        "mcc": "5651",
+        "category": "Shopping"
+    },
+    {
+        "transactionId": "16",
+        "date": "2023-10-16",
+        "description": "Cash Withdrawal",
+        "amount": -100.00,
+        "mcc": "6011",
+        "category": "Cash Withdrawal"
+    },
+    {
+        "transactionId": "17",
+        "date": "2023-10-17",
+        "description": "Electric Bill",
+        "amount": -120.00,
+        "mcc": "4900",
+        "category": "Utilities"
+    },
+    {
+        "transactionId": "18",
+        "date": "2023-10-18",
+        "description": "Medical Store",
+        "amount": -30.00,
+        "mcc": "5912",
+        "category": "Healthcare"
+    },
+    {
+        "transactionId": "19",
+        "date": "2023-10-19",
+        "description": "Tech Store",
+        "amount": -400.00,
+        "mcc": "5732",
+        "category": "Electronics"
+    },
+    {
+        "transactionId": "20",
+        "date": "2023-10-20",
+        "description": "Bistro",
+        "amount": -20.00,
+        "mcc": "5814",
+        "category": "Dining"
     }
 ];
 
