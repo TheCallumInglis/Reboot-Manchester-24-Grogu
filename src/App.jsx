@@ -1,8 +1,9 @@
 import "./App.css";
 import calculateSavings from "./utils/calculateSavings";
 import Graph from "./Graph";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SplashScreen from "./Components/SplashScreen";
+import CityMapperTheft from "./Components/CityMapperTheft";
 
 import convertNumToGBP from "./utils/convertNumToGBP";
 import convertGBPToNum from "./utils/convertGBPToNum";
@@ -14,12 +15,20 @@ export default function App() {
   let [singleOverpayment, setSingleOverpayment] = useState("£100");
   let [monthlyOverpayment, setMonthlyOverpayment] = useState("£50");
   let [totalSavings, setTotalSavings] = useState("");
+  let [totalSavingsInt, setTotalSavingsInt] = useState(null);
   let [submittedDetails, setSubmittedDetails] = useState(undefined);
   let [showSplashScreen, setShowSplashScreen] = useState(true);
 
   const handleSplashClick = () => {
     setShowSplashScreen(false);
   };
+
+  const getTotalOverpayment = () => {
+    return convertGBPToNum(singleOverpayment) 
+      + Number(
+        convertGBPToNum(monthlyOverpayment) * (Number(term[0] * 12) + Number(term[1]))
+      );
+  }
 
   const handleSubmit = (e) => {
     const mortgageDetails = {
@@ -35,6 +44,7 @@ export default function App() {
       convertGBPToNum(monthlyOverpayment)
     );
     setTotalSavings(convertNumToGBP(savings.totalInterestSaved));
+    setTotalSavingsInt(savings.totalInterestSaved);
 
     setSubmittedDetails({
       ...mortgageDetails,
@@ -43,6 +53,12 @@ export default function App() {
       savings,
     });
   };
+
+  useEffect(() => {
+    // This effect will run whenever totalSavings changes
+    console.log('Total savings changed:', totalSavingsInt);
+    // Add any other side effects you want to run when totalSavings changes
+  }, [totalSavingsInt]);
 
   return (
     <main>
@@ -162,7 +178,12 @@ export default function App() {
             ) : (
               <></>
             )}
+
             <h1>Total Savings: {totalSavings}</h1>
+            {totalSavingsInt !== undefined && totalSavingsInt !== 0 && (
+              <CityMapperTheft totalSavings={totalSavingsInt} overPayment={getTotalOverpayment()}  />
+            )}
+
             {submittedDetails !== undefined ? (
               <Graph data={submittedDetails} />
             ) : (

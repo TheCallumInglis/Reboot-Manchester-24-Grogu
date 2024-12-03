@@ -484,7 +484,7 @@ const getTopmccCodes = (transactions, topN = 3) => {
   return sortedmccCodes;
 };
 
-const valueToCommontransactions = (overpaymentValue) => {
+export const valueToCommontransactions = (overpaymentValue, savingsValue) => {
   const topmccCodes = getTopmccCodes(transactions);
 
   // Choose random mcc
@@ -510,6 +510,18 @@ const valueToCommontransactions = (overpaymentValue) => {
       100
     ).toFixed(2)}% of your total spend at "${randommcc.description}"`
   );
+
+
+  return {
+    valueOfTransactions: valueOftransactions,
+    totalTransactions: filteredtransactions.length,
+    filteredMCC: randommcc.description,
+    overpaymentValue: overpaymentValue.savingsValue,
+    overpaymentAsPctOfTotalSpend: (
+      (overpaymentValue.savingsValue / valueOftransactions) *
+      100
+    ).toFixed(2)
+  }
 };
 
-console.log(valueToCommontransactions(100));
+// console.log(valueToCommontransactions(100));
