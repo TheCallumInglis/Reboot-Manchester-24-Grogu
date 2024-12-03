@@ -1,0 +1,442 @@
+[
+    {
+        "Transaction No.": "TRX20001",
+        "Date": "01/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -3.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20002",
+        "Date": "01/11/2024",
+        "Transaction": "Lidl",
+        "Amount": -45.23,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20003",
+        "Date": "01/11/2024",
+        "Transaction": "Monthly Salary",
+        "Amount": 2729.21,
+        "Currency": "GBP",
+        "MCC code": 0
+    },
+    {
+        "Transaction No.": "TRX20004",
+        "Date": "01/11/2024",
+        "Transaction": "Octopus Energy Ltd",
+        "Amount": -85.0,
+        "Currency": "GBP",
+        "MCC code": 4900
+    },
+    {
+        "Transaction No.": "TRX20005",
+        "Date": "01/11/2024",
+        "Transaction": "Pizza Express",
+        "Amount": -65.5,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20006",
+        "Date": "02/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -7.7,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20007",
+        "Date": "02/11/2024",
+        "Transaction": "PureGym",
+        "Amount": -30.0,
+        "Currency": "GBP",
+        "MCC code": 7999
+    },
+    {
+        "Transaction No.": "TRX20008",
+        "Date": "02/11/2024",
+        "Transaction": "Transfer to Savings",
+        "Amount": -200.0,
+        "Currency": "GBP",
+        "MCC code": 0
+    },
+    {
+        "Transaction No.": "TRX20009",
+        "Date": "03/11/2024",
+        "Transaction": "ASOS",
+        "Amount": -150.75,
+        "Currency": "GBP",
+        "MCC code": 5300
+    },
+    {
+        "Transaction No.": "TRX20010",
+        "Date": "03/11/2024",
+        "Transaction": "Shell",
+        "Amount": -30.0,
+        "Currency": "GBP",
+        "MCC code": 4814
+    },
+    {
+        "Transaction No.": "TRX20011",
+        "Date": "03/11/2024",
+        "Transaction": "Interest Income",
+        "Amount": 2.33,
+        "Currency": "GBP",
+        "MCC code": 0
+    },
+    {
+        "Transaction No.": "TRX20012",
+        "Date": "03/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -4.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20013",
+        "Date": "03/11/2024",
+        "Transaction": "Lidl",
+        "Amount": -12.69,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20014",
+        "Date": "03/11/2024",
+        "Transaction": "Council tax",
+        "Amount": -122.24,
+        "Currency": "GBP",
+        "MCC code": 0
+    },
+    {
+        "Transaction No.": "TRX20015",
+        "Date": "04/11/2024",
+        "Transaction": "Decathlon",
+        "Amount": -39.95,
+        "Currency": "GBP",
+        "MCC code": 5941
+    },
+    {
+        "Transaction No.": "TRX20016",
+        "Date": "04/11/2024",
+        "Transaction": "PharmLite",
+        "Amount": -9.65,
+        "Currency": "GBP",
+        "MCC code": 5912
+    },
+    {
+        "Transaction No.": "TRX20017",
+        "Date": "04/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -3.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20018",
+        "Date": "04/11/2024",
+        "Transaction": "Gather&Gather",
+        "Amount": -5.01,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20019",
+        "Date": "05/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -3.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20020",
+        "Date": "05/11/2024",
+        "Transaction": "Lothian Buses",
+        "Amount": -4.0,
+        "Currency": "GBP",
+        "MCC code": 4131
+    },
+    {
+        "Transaction No.": "TRX20021",
+        "Date": "05/11/2024",
+        "Transaction": "Gather&Gather",
+        "Amount": -5.01,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20022",
+        "Date": "05/11/2024",
+        "Transaction": "H&M",
+        "Amount": -24.99,
+        "Currency": "GBP",
+        "MCC code": 5300
+    },
+    {
+        "Transaction No.": "TRX20023",
+        "Date": "06/11/2024",
+        "Transaction": "Gather&Gather",
+        "Amount": -5.01,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20024",
+        "Date": "06/11/2024",
+        "Transaction": "Lothian Buses",
+        "Amount": -4.0,
+        "Currency": "GBP",
+        "MCC code": 4131
+    },
+    {
+        "Transaction No.": "TRX20025",
+        "Date": "08/11/2024",
+        "Transaction": "BP",
+        "Amount": -20.0,
+        "Currency": "GBP",
+        "MCC code": 4814
+    },
+    {
+        "Transaction No.": "TRX20026",
+        "Date": "08/11/2024",
+        "Transaction": "Tesco",
+        "Amount": -56.75,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20027",
+        "Date": "09/11/2024",
+        "Transaction": "Amazon",
+        "Amount": -78.95,
+        "Currency": "GBP",
+        "MCC code": 5942
+    },
+    {
+        "Transaction No.": "TRX20028",
+        "Date": "09/11/2024",
+        "Transaction": "Boots",
+        "Amount": -15.3,
+        "Currency": "GBP",
+        "MCC code": 5912
+    },
+    {
+        "Transaction No.": "TRX20029",
+        "Date": "09/11/2024",
+        "Transaction": "McDonald's",
+        "Amount": -8.49,
+        "Currency": "GBP",
+        "MCC code": 5814
+    },
+    {
+        "Transaction No.": "TRX20030",
+        "Date": "10/11/2024",
+        "Transaction": "National Rail",
+        "Amount": -23.5,
+        "Currency": "GBP",
+        "MCC code": 4111
+    },
+    {
+        "Transaction No.": "TRX20031",
+        "Date": "10/11/2024",
+        "Transaction": "Costa Coffee",
+        "Amount": -4.5,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20032",
+        "Date": "11/11/2024",
+        "Transaction": "Waitrose",
+        "Amount": -66.8,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20033",
+        "Date": "11/11/2024",
+        "Transaction": "Spotify",
+        "Amount": -9.99,
+        "Currency": "GBP",
+        "MCC code": 5815
+    },
+    {
+        "Transaction No.": "TRX20034",
+        "Date": "11/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -3.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20035",
+        "Date": "12/11/2024",
+        "Transaction": "Netflix",
+        "Amount": -8.99,
+        "Currency": "GBP",
+        "MCC code": 5815
+    },
+    {
+        "Transaction No.": "TRX20036",
+        "Date": "12/11/2024",
+        "Transaction": "Uber",
+        "Amount": -12.45,
+        "Currency": "GBP",
+        "MCC code": 4121
+    },
+    {
+        "Transaction No.": "TRX20037",
+        "Date": "13/11/2024",
+        "Transaction": "Sainsbury's",
+        "Amount": -34.15,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20038",
+        "Date": "13/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -3.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20039",
+        "Date": "14/11/2024",
+        "Transaction": "Lothian Buses",
+        "Amount": -4.0,
+        "Currency": "GBP",
+        "MCC code": 4131
+    },
+    {
+        "Transaction No.": "TRX20040",
+        "Date": "14/11/2024",
+        "Transaction": "Gather&Gather",
+        "Amount": -5.01,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20041",
+        "Date": "15/11/2024",
+        "Transaction": "ASOS",
+        "Amount": -120.89,
+        "Currency": "GBP",
+        "MCC code": 5300
+    },
+    {
+        "Transaction No.": "TRX20042",
+        "Date": "15/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -4.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20043",
+        "Date": "16/11/2024",
+        "Transaction": "Lidl",
+        "Amount": -18.6,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20044",
+        "Date": "16/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -3.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20045",
+        "Date": "17/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -4.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20046",
+        "Date": "17/11/2024",
+        "Transaction": "Boots",
+        "Amount": -12.3,
+        "Currency": "GBP",
+        "MCC code": 5912
+    },
+    {
+        "Transaction No.": "TRX20047",
+        "Date": "18/11/2024",
+        "Transaction": "Amazon",
+        "Amount": -56.4,
+        "Currency": "GBP",
+        "MCC code": 5942
+    },
+    {
+        "Transaction No.": "TRX20048",
+        "Date": "18/11/2024",
+        "Transaction": "Costa Coffee",
+        "Amount": -5.75,
+        "Currency": "GBP",
+        "MCC code": 5812
+    },
+    {
+        "Transaction No.": "TRX20049",
+        "Date": "19/11/2024",
+        "Transaction": "Tesco",
+        "Amount": -45.5,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20050",
+        "Date": "19/11/2024",
+        "Transaction": "Spotify",
+        "Amount": -9.99,
+        "Currency": "GBP",
+        "MCC code": 5815
+    },
+    {
+        "Transaction No.": "TRX20051",
+        "Date": "20/11/2024",
+        "Transaction": "Sainsbury's",
+        "Amount": -29.1,
+        "Currency": "GBP",
+        "MCC code": 5411
+    },
+    {
+        "Transaction No.": "TRX20052",
+        "Date": "20/11/2024",
+        "Transaction": "Netflix",
+        "Amount": -8.99,
+        "Currency": "GBP",
+        "MCC code": 5815
+    },
+    {
+        "Transaction No.": "TRX20053",
+        "Date": "21/11/2024",
+        "Transaction": "McDonald's",
+        "Amount": -6.75,
+        "Currency": "GBP",
+        "MCC code": 5814
+    },
+    {
+        "Transaction No.": "TRX20054",
+        "Date": "21/11/2024",
+        "Transaction": "Boots",
+        "Amount": -14.5,
+        "Currency": "GBP",
+        "MCC code": 5912
+    },
+    {
+        "Transaction No.": "TRX20055",
+        "Date": "22/11/2024",
+        "Transaction": "JavaJuice",
+        "Amount": -3.45,
+        "Currency": "GBP",
+        "MCC code": 5812
+    }
+]
