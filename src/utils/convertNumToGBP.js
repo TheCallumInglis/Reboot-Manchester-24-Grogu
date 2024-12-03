@@ -12,6 +12,7 @@ export default function convertNumToGBP(value, setValue) {
 
   if (setValue) {
     setValue(valueOutput)
+
   }
 
   return valueOutput
