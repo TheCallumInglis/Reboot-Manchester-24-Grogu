@@ -1,0 +1,90 @@
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  border: 5px solid rgb(0,134,79);
+  width: 550px;
+  height: auto;
+  padding: 20px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  border: 1px solid;
+  padding: 50px;
+}
+
+form > * {
+  margin: 12px 0;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 58%;
+}
+
+.label-inner {
+  display: block;
+  margin: 0;
+}
+
+.term-inner {
+  margin-top: 0;
+  display: inline-block;
+  width: 50%
+}
+
+.term-title {
+  margin: 0;
+}
+ 
+.label-inner > input {
+  margin: 6px 0;
+  font-size: 1.2rem;
+  display: block;
+}
+.term-inner > input {
+  font-size: 1.2rem;
+  margin: 6px 0;
+}
+
+.form-button {
+	background-color: #5cbf2a;
+	border-radius:16px;
+	border:3px solid rgb(0,134,79);
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+  font-weight: bold;
+	padding:10px 50px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px rgb(0,134,79);
+
+  justify-self: center;
+}
+.form-button:hover {
+	background-color:#53ac26;
+}
+.form-button:active {
+	position:relative;
+	top:1px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  background-colour: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
