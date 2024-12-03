@@ -1,8 +1,9 @@
 export default function calculateMortgagePayments(
-  loanAmount,
+  loanamount,
   annualInterestRate,
   loanTermMonths,
-  monthlyPayment
+  monthlyPayment,
+  monthlyOverpayment = 0
 ) {
   const monthlyInterestRate = annualInterestRate / 12 / 100; // Convert annual rate to monthly decimal
 
@@ -10,16 +11,16 @@ export default function calculateMortgagePayments(
   let payment;
 
   if (monthlyPayment) {
-    payment = monthlyPayment;
+    payment = monthlyPayment + monthlyOverpayment;
   } else {
     payment =
-      (loanAmount *
+      (loanamount *
         (monthlyInterestRate *
           Math.pow(1 + monthlyInterestRate, loanTermMonths))) /
       (Math.pow(1 + monthlyInterestRate, loanTermMonths) - 1);
   }
 
-  let remainingBalance = loanAmount;
+  let remainingBalance = loanamount;
   const paymentSchedule = [];
 
   for (let month = 1; month <= loanTermMonths; month++) {
@@ -44,11 +45,11 @@ export default function calculateMortgagePayments(
 }
 
 // // Example usage
-// const loanAmount = 250000; // Loan amount in GBP
+// const loanamount = 250000; // Loan amount in GBP
 // const annualInterestRate = 6; // Annual interest rate in percent
 // const loanTermMonths = 30; // Loan term in years
 
-// const payments = calculateMortgagePayments(loanAmount, annualInterestRate, loanTermMonthsYears);
+// const payments = calculateMortgagePayments(loanamount, annualInterestRate, loanTermMonthsYears);
 
 // // Log each month's payment schedule
 // console.log(payments);
