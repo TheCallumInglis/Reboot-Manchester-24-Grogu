@@ -7,7 +7,7 @@ import convertNumToGBP from "./utils/convertNumToGBP";
 import convertGBPToNum from "./utils/convertGBPToNum";
 
 export default function App() {
-  let [amount, setAmount] = useState("£200,000");
+  let [amount, setamount] = useState("£200,000");
   let [interest, setInterest] = useState(5);
   let [term, setTerm] = useState([25, 0]);
   let [overpayment, setOverpayment] = useState("£100");
@@ -15,7 +15,7 @@ export default function App() {
 
   const handleSubmit = (e) => {
     const mortgageDetails = {
-      loanAmount: convertGBPToNum(amount),
+      loanamount: convertGBPToNum(amount),
       annualInterestRate: interest,
       loanTermMonths: Number(term[0] * 12) + Number(term[1]),
     };
@@ -38,7 +38,7 @@ export default function App() {
             type="text"
             name="amount"
             value={amount}
-            onChange={(e) => convertNumToGBP(e.target.value, setAmount)}
+            onChange={(e) => convertNumToGBP(e.target.value, setamount)}
           />
         </div>
         <br />
@@ -87,13 +87,12 @@ export default function App() {
           />
         </div>
         <br />
-        <button className="form-button" type="submit">Submit</button>
+        <button className="form-button" type="submit">
+          Submit
+        </button>
       </form>
 
-      {savingsCalculated != null ? 
-      <Chart data={savingsCalculated} />
-      : null }
-
+      {savingsCalculated != null ? <Chart data={savingsCalculated} /> : null}
     </main>
   );
 }
