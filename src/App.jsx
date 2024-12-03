@@ -15,18 +15,29 @@ export default function App() {
   let [totalSavings, setTotalSavings] = useState("")
   let [submittedDetails, setSubmittedDetails] = useState(undefined)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
     const mortgageDetails = {
       loanAmount: convertGBPToNum(amount),
       annualInterestRate: interest,
       loanTermMonths: Number(term[0] * 12) + Number(term[1]),
     };
-    e.preventDefault();
+
+    // console.log("eeeeee", e.target[0].value)
+    // const details = {
+    //   annualInterestRate: interest,
+    //   loanAmount: amount,
+    //   loanTerm: 
+    // }
+
 
     const savings = calculateSavings(mortgageDetails, convertGBPToNum(singleOverpayment), convertGBPToNum(monthlyOverpayment));
+
     setTotalSavings("£" + savings.totalInterestSaved)
 
     setSubmittedDetails({...mortgageDetails, singleOverpayment, monthlyOverpayment, savings})
+    console.log("submittedDetails", submittedDetails)
   };
 
   return (
@@ -112,12 +123,12 @@ export default function App() {
       {submittedDetails !== undefined ? (
         <div className="mortgage-details">
         <h2>Mortgage Details</h2>
-        <p>Original Balance: {amount}</p>
-        <p>Single Overpayment amount: {singleOverpayment}</p>
-        <p>Monthly Overpayment amount: {monthlyOverpayment}</p>
-        <p>New Balance: {  convertNumToGBP(String(convertGBPToNum(amount) - convertGBPToNum(singleOverpayment)))}</p>
-        <p>Total Term: {term[0]} Years, {term[1]} Months</p>
-        <p>Interest: (APR) {interest}%</p>
+        <p>Original Balance: {convertNumToGBP(String(submittedDetails.loanAmount))}</p>
+        <p>Single Overpayment amount: {submittedDetails.singleOverpayment}</p>
+        <p>Monthly Overpayment amount: {submittedDetails.monthlyOverpayment}</p>
+        <p>New Balance: {  convertNumToGBP(String(submittedDetails.loanAmount - convertGBPToNum(submittedDetails.singleOverpayment)))}</p>
+        <p>Total Term: {Math.floor(submittedDetails.loanTermMonths / 12)} Years, {submittedDetails.loanTermMonths % 12} Months</p>
+        <p>Interest: (APR) {submittedDetails.annualInterestRate}%</p>
         <p>Monthly Payment: {"£" + submittedDetails.savings.monthlyPayment}</p>
         </div>
     ) : (<></>)}
