@@ -24,7 +24,7 @@ export default function App() {
     e.preventDefault();
 
     const savings = calculateSavings(mortgageDetails, convertGBPToNum(singleOverpayment), convertGBPToNum(monthlyOverpayment));
-    setTotalSavings("£" + savings.totalInterestSaved)
+    setTotalSavings(convertNumToGBP(savings.totalInterestSaved));
 
     setSubmittedDetails({...mortgageDetails, singleOverpayment, monthlyOverpayment, savings})
   };
