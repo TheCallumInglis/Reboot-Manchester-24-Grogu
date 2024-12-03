@@ -23,7 +23,7 @@ export default function App() {
 
   const handleSubmit = (e) => {
     const mortgageDetails = {
-      loanamount: convertGBPToNum(amount),
+      loanAmount: convertGBPToNum(amount),
       annualInterestRate: interest,
       loanTermMonths: Number(term[0] * 12) + Number(term[1]),
     };
