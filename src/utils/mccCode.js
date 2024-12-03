@@ -460,7 +460,7 @@ const valueTomccCode = (value) => {
   return mccCodeMap[value] || "Unknown mcc";
 };
 
-const getTopmccCodes = (transactions, topN = 3) => {
+const getTopmccCodes = (transactions, topN = 9) => {
   const mccCount = {};
 
   transactions
